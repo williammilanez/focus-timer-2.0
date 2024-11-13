@@ -17,7 +17,6 @@
 ## 🚀 Tecnologias desenvolvidas no projeto
 - HTML e CSS;<br/>
 - JavaScript;<br/>
-- Figma.<br/>
 
 ---
 
