@@ -1,23 +1,29 @@
 # Focus Timer - Pomodoro (versão 2.0)
 
 ## 💻 Sobre o aplicativo
-- Aplicativo com o objetivo de melhorar o foco, usando como referência a Técnica Pomodoro
-- Nesta versão, há mais opções de som para selecionar, incrementando uma mudança de cenário no fundo da tela, de acordo com o tema escolhido
+- Aplicativo com o objetivo de melhorar o foco, usando como referência a Técnica Pomodoro.
+- Nesta versão 2.0, podem ser escolhidos entre quatro tipos diferentes de sons para escutar.
 
 <img alt="Imagem do Projeto" src="./images/projetoFocusTimer2.png" width="50%">
 
 ### Funcionalidade dos botões
-- Play  : aciona o timer;<br/>
-- Stop  : para o timer;<br/>
-- (+)   : aumenta em mais 5 minutos o tempo do timer;<br/>
-- (-)   : diminui em 5 minutos o tempo do timer.<br/>
+- Play  : Inicia o contador;<br/>
+- Pause : Pausa o contador;<br/>
+- Set   : Ajusta o contador;<br/>
+- Stop  : Para/Reinicia o contador;<br/>
+- (+)   : Adiciona 5 minutos no contador;<br/>
+- (-)   : Subtrai 5 minutos no contador.<br/>
+
+- Card Floresta : Quando acionado, emite som de Floresta;<br/>
+- Card Chuva    : Quando acionado, emite som de Chuva;<br/>
+- Card Cafeteria: Quando acionado, emite som de Cafeteria;<br/>
+- Card Lareira  : Quando acionado, emite som de Lareira.<br/>
 
 ---
 
 ## 🚀 Tecnologias desenvolvidas no projeto
 - HTML e CSS;<br/>
 - JavaScript;<br/>
-- Figma.<br/>
 
 ---
 
