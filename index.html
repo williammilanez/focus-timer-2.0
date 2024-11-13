@@ -19,29 +19,93 @@
 </head>
 <body>
     <div id="app">
+        <header>
+            <!--light/dark mode-->
+            <button id="toggle-mode">
+                <span class="sr-only">Ativar light mode!</span>
+                <i class="ph-bold ph-sun"></i>
+                <i class="ph-bold ph-moon"></i>
+            </button>
+        </header>
+
         <main>
+            <!--timer time-->
             <section id="timer" class="flex">
                 <span id="minutes">00</span>
                 <span>:</span>
                 <span id="seconds">00</span>
             </section>
 
+            <!--timer buttons-->
             <section id="controls" class="flex">
-                <button class="ph ph-play-circle"></button>
-                <button class="ph ph-pause-circle"></button>
-                <button class="ph ph-timer secondary"></button>
-                <button class="ph ph-stop-circle secondary"></button>
-                <button class="ph ph-plus-circle"></button>
-                <button class="ph ph-minus-circle"></button>
+                <button data-action="toggleRunning" class="ph ph-play-circle">
+                    <span class="sr-only">Iniciar contador</span>
+                </button>
+
+                <button data-action="toggleRunning" class="ph ph-pause-circle">
+                    <span class="sr-only">Pausar contador</span>
+                </button>
+
+                <button data-action="set" class="ph ph-timer secondary">
+                    <span class="sr-only">Ajustar contador</span>
+                </button>
+
+                <button data-action="reset" class="ph ph-stop-circle secondary">
+                    <span class="sr-only">Reiniciar contador</span>
+                </button>
+
+                <button data-action="plusTime" class="ph ph-plus-circle">
+                    <span class="sr-only">Adicionar 5 minutos no contador</span>
+                </button>
+
+                <button data-action="minusTime" class="ph ph-minus-circle">
+                    <span class="sr-only">Diminuir 5 minutos no contador</span>
+                </button>
             </section>
         </main>
 
         <aside>
-            <section id="cards">
-                <button id="toggle-mode" class="forest"><span>Ativar/Desativar Forest Mode</span></button>
-                <button id="toggle-mode" class="rain"><span>Ativar/Desativar Rain Mode</span></button>
-                <button id="toggle-mode" class="coffee-shop"><span>Ativar/Desativar Coffee-shop Mode</span></button>
-                <button id="toggle-mode" class="fireplace"><span>Ativar/Desativar Fireplace Mode</span></button>
+            <!--songs theme-->
+            <section id="songs">
+                <button data-action="toggleMusic" class="forest-off secondary">
+                    <img src="./assets/forest.svg" alt="Floresta">
+                    <span class="sr-only">Iniciar música de Floresta</span>
+                </button>
+
+                <button data-action="toggleMusic" class="forest-on">
+                    <img src="./assets/forest.svg" alt="Floresta">
+                    <span class="sr-only">Parar música de Floresta</span>
+                </button>
+
+                <button data-action="toggleMusic" class="rain-off secondary">
+                    <img src="./assets/rain.svg" alt="Chuva">
+                    <span class="sr-only">Iniciar música de Chuva</span>
+                </button>
+    
+                <button data-action="toggleMusic" class="rain-on">
+                    <img src="./assets/rain.svg" alt="Chuva">
+                    <span class="sr-only">Parar música de Chuva</span>
+                </button>
+
+                <button data-action="toggleMusic" class="coffee-shop-off secondary">
+                    <img src="./assets/coffee-shop.svg" alt="Cafeteria">
+                    <span class="sr-only">Iniciar música de Cafeteria</span>
+                </button>
+    
+                <button data-action="toggleMusic" class="coffee-shop-on">
+                    <img src="./assets/coffee-shop.svg" alt="Cafeteria">
+                    <span class="sr-only">Parar música de Cafeteria</span>
+                </button>
+
+                <button data-action="toggleMusic" class="fireplace-off secondary">
+                    <span><img src="./assets/fireplace.svg" alt="Lareira">
+                    <span class="sr-only">Iniciar música de Lareira</span>
+                </button>
+    
+                <button data-action="toggleMusic" class="fireplace-on">
+                    <span><img src="./assets/fireplace.svg" alt="Lareira">
+                    <span class="sr-only">Parar música de Lareira</span>
+                </button>
             </section>
         </aside>
     </div>
