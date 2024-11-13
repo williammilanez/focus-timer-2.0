@@ -22,13 +22,13 @@
 ---
 
 ## 🔖 Layout
-[Figma] https://www.figma.com/design/kW3Zo3VIM03qijXYjzzUyO/Stage-05---Focus-Timer-2.0-(Copy)?node-id=0-1&node-type=canvas&t=NQEzPtOTRcc8wUHu-0
+[Figma]
+- https://www.figma.com/design/kW3Zo3VIM03qijXYjzzUyO/Stage-05---Focus-Timer-2.0-(Copy)?node-id=0-1&node-type=canvas&t=NQEzPtOTRcc8wUHu-0
 
 ---
 
 ## :memo: Plataforma de ensino
-
-### Desenvolvido na plataforma @Rocketseat 
+[Rocketseat]
 - www.rocketseat.com.br
 
 ---
