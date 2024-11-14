@@ -8,17 +8,19 @@
     --hue: 194;
     --bg-color:hsl(var(--hue), 5%, 7%);
     --text-color:hsl(var(--hue), 40%, 98%);
-    --primary-color:hsl(var(--hue), 100%, 63%);
-    --controls-bg-color:hsl(var(--hue), 0%, 14%);
-    --button-secondary:hsl(var(--hue), 40%, 98%);
-    --bg-button-songs:hsl(var(--hue), 97%, 31%);
+    --controls-bg-color:hsl(var(--hue), 9%, 89%);
+
+    --bg-forest-color:hsl(133, 83%, 30%);
+    --bg-rain-color:hsl(194, 97%, 31%);
+    --bg-coffee-shop-color:hsl(34, 100%, 37%);
+    --bg-fireplace-color:hsl(0, 93%, 39%);
 
     font-size: clamp(40%, 1% + 2vw, 62.5%);
 }
 
 html.light {
     --bg-color:hsl(var(--hue), 40%, 98%);
-    --text-color:hsl(var(--hue), 5%, 7%);
+    --text-color:hsl(var(--hue), 6%, 21%);
 }
 
 html.light .ph-sun,
@@ -86,22 +88,18 @@ main {
 }
 
 #controls {
-    padding: 2.2rem 4rem;
+    padding: 0.8rem 4rem;
     gap: 1.6rem;
 }
 
 button {
     background-color: transparent;
     border: 0;
-    color: var(--primary-color);
+    color: var(--text-color);
     
     cursor: pointer;
     
     font-size: 4.8rem;
-}
-
-.secondary {
-    color: var(--button-secondary);
 }
 
 aside .button {
