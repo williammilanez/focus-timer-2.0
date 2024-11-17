@@ -1,13 +1,13 @@
-let darkMode = true
+let lightMode = true
 const buttonToggle = document.getElementById('toggle-mode')
 
 buttonToggle.addEventListener('click', (event) => {
-    document.documentElement.classList.toggle('light')
+    document.documentElement.classList.toggle('dark')
 
-    const mode = darkMode ? 'light' : 'dark'
+    const mode = lightMode ? 'dark' : 'light'
     event.currentTarget.querySelector('span').textContent = `${mode} mode ativado!`
 
-    darkMode = !darkMode
+    lightMode = !lightMode
 })
 
 

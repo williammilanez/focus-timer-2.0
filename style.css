@@ -6,8 +6,8 @@
 
 :root {
     --hue: 194;
-    --bg-color:hsl(var(--hue), 5%, 7%);
-    --text-color:hsl(var(--hue), 40%, 98%);
+    --bg-color:hsl(var(--hue), 40%, 98%);
+    --text-color:hsl(var(--hue), 6%, 21%);
     --controls-bg-color:hsl(var(--hue), 9%, 89%);
 
     --bg-forest-color:hsl(133, 83%, 30%);
@@ -18,13 +18,13 @@
     font-size: clamp(40%, 1% + 2vw, 62.5%);
 }
 
-html.light {
-    --bg-color:hsl(var(--hue), 40%, 98%);
-    --text-color:hsl(var(--hue), 6%, 21%);
+html.dark {
+    --bg-color:hsl(var(--hue), 5%, 7%);
+    --text-color:hsl(var(--hue), 40%, 98%);
 }
 
-html.light .ph-sun,
-html:not(.light) .ph-moon {
+html.dark .ph-moon,
+html:not(.dark) .ph-sun {
     display: none;
 }
 
