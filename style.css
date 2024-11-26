@@ -10,10 +10,10 @@
     --text-color:hsl(var(--hue), 6%, 21%);
     --controls-bg-color:hsl(var(--hue), 9%, 89%);
 
-    --bg-forest-color:hsl(133, 83%, 30%);
-    --bg-rain-color:hsl(194, 97%, 31%);
-    --bg-coffee-shop-color:hsl(34, 100%, 37%);
-    --bg-fireplace-color:hsl(0, 93%, 39%);
+    --bg-forest-color: background linear-gradient(45deg, #064d18 0%, rgb(0, 255, 0) 100%);
+    --bg-rain-color: background linear-gradient(45deg, #0039a3 0%, rgb(177, 181, 238) 100%);
+    --bg-coffee-shop-color: background linear-gradient(45deg, #7a4c07 0%, rgb(238, 164, 26) 100%);
+    --bg-fireplace-color: background linear-gradient(45deg, #8f1313 0%, rgb(252, 4, 4) 100%);
 
     font-size: clamp(40%, 1% + 2vw, 62.5%);
 }
@@ -124,19 +124,47 @@ aside .button {
     height: 100%;
 }
 
+#forest:hover {
+    background: var(--bg-forest-color);
+    animation: gradient 3s ease-in-out infinite;
+    background-size: 300% 300%;
+}
+
+#rain:hover {
+    background: var(--bg-rain-color);
+    animation: gradient 3s ease-in-out infinite;
+    background-size: 300% 300%;
+}
+
+#coffee-shop:hover {
+    background: var(--bg-coffee-shop-color);
+    animation: gradient 3s ease-in-out infinite;
+    background-size: 300% 300%;
+}
+
+#fireplace:hover {
+    background: var(--bg-fireplace-color);
+    animation: gradient 3s ease-in-out infinite;
+    background-size: 300% 300%;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
 /* controls */
 .running .ph-play-circle,
 .running .ph-timer,
-.music-on .forest-off,
-.music-on .rain-off,
-.music-on .coffee-shop-off,
-.music-on .fireplace-off,
 html:not(.running) .ph-pause-circle,
-html:not(.running) .ph-stop-circle,
-html:not(.music-on) .forest-on,
-html:not(.music-on) .rain-on,
-html:not(.music-on) .coffee-shop-on,
-html:not(.music-on) .fireplace-on {
+html:not(.running) .ph-stop-circle {
     display: none;
 }
 
