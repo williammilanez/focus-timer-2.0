@@ -36,23 +36,4 @@ export function setMinutes() {
 
 
 
-// arrumar daqui para baixo
-
-export function plusTime() {
-    if (minutes >= 60) {
-      return
-    }
-    minutes = minutes + 5
-    resetDisplay()
-  }
-
-export function minusTime() {
-    if (minutes == 0) {
-      return
-    }
-    minutes = minutes - 5
-    resetDisplay()
-  }
-
-
 

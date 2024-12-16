@@ -28,7 +28,7 @@ export function set() {
 export function plusTime() {
     const addMinutes = el.minutes
     const minutes = Number(addMinutes.innerHTML)
-    const newPlusMinute = minutes + 5
+    const newPlusMinute = Math.min(minutes + 5, 60);
     addMinutes.innerHTML = newPlusMinute
 
     sounds.buttonPressAudio.play()
@@ -37,12 +37,11 @@ export function plusTime() {
 export function minusTime() {
     const subMinutes = el.minutes
     const minutes = Number(subMinutes.innerHTML)
-    const newSubMinute = minutes - 5
+    const newSubMinute = Math.max(minutes - 5, 0);
     subMinutes.innerHTML = newSubMinute
 
     sounds.buttonPressAudio.play()
 }
-
 
 // arrumar daqui para baixo
 
