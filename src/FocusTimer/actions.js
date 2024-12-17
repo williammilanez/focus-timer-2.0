@@ -43,50 +43,54 @@ export function minusTime() {
     sounds.buttonPressAudio.play()
 }
 
-// arrumar daqui para baixo
+
+
+
+
+// tocar tudo junto nao...
 
 export function forest() {
     state.isMute = document.documentElement.classList.toggle('music-on')
 
     if(state.isMute) {
-        sounds.bgAudio.play()
+        sounds.forestAudio.play()
         return
     }
 
-    sounds.bgAudio.pause()
+    sounds.forestAudio.pause()
 }
 
 export function rain() {
     state.isMute = document.documentElement.classList.toggle('music-on')
 
     if(state.isMute) {
-        sounds.bgAudio.play()
+        sounds.rainAudio.play()
         return
     }
 
-    sounds.bgAudio.pause()
+    sounds.rainAudio.pause()
 }
 
 export function coffeeShop() {
     state.isMute = document.documentElement.classList.toggle('music-on')
 
     if(state.isMute) {
-        sounds.bgAudio.play()
+        sounds.coffeeShopAudio.play()
         return
     }
 
-    sounds.bgAudio.pause()
+    sounds.coffeeShopAudio.pause()
 }
 
 export function fireplace() {
     state.isMute = document.documentElement.classList.toggle('music-on')
 
     if(state.isMute) {
-        sounds.bgAudio.play()
+        sounds.fireplaceAudio.play()
         return
     }
 
-    sounds.bgAudio.pause()
+    sounds.fireplaceAudio.pause()
 }
 
 

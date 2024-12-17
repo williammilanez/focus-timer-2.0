@@ -34,6 +34,16 @@ export function setMinutes() {
     })
 }
 
+export function registerSongs() {
+    el.songs.addEventListener('click', (event) => {
+        const action = event.target.dataset.action
+        if(typeof actions[action] != "function") {
+            return
+        }
+
+        actions[action]()
+    })
+}
 
 
 

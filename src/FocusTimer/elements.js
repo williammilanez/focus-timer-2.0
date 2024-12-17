@@ -4,9 +4,6 @@ export const minutes = document.getElementById('minutes')
 
 export const seconds = document.getElementById('seconds')
 
-
-// arrumar daqui para baixo
-
 export const songs = document.getElementById('songs')
 
 
