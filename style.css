@@ -168,5 +168,37 @@ html:not(.running) .ph-stop-circle {
     display: none;
 }
 
+@media only screen and (max-width: 1024px) {
+    #app {
+        grid-template-areas:
+            "header"
+            "main"
+            "aside";
+        grid-template-rows: auto auto auto;
+        justify-items: center;
+        align-items: start;
+    }
+
+    main {
+        max-width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    #songs {
+        display: flex;
+        flex-direction: row;
+        gap: 1.6rem;
+        justify-content: center;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    #songs button {
+        flex: 1;
+        height: auto;
+        padding: 1rem;
+    }
+
+
 
 
