@@ -124,25 +124,29 @@ aside .button {
     height: 100%;
 }
 
-#forest:hover {
+#forest:hover,
+#forest.active {
     background: var(--bg-forest-color);
     animation: gradient 3s ease-in-out infinite;
     background-size: 300% 300%;
 }
 
-#rain:hover {
+#rain:hover,
+#rain.active {
     background: var(--bg-rain-color);
     animation: gradient 3s ease-in-out infinite;
     background-size: 300% 300%;
 }
 
-#coffee-shop:hover {
+#coffee-shop:hover,
+#coffee-shop.active {
     background: var(--bg-coffee-shop-color);
     animation: gradient 3s ease-in-out infinite;
     background-size: 300% 300%;
 }
 
-#fireplace:hover {
+#fireplace:hover,
+#fireplace.active {
     background: var(--bg-fireplace-color);
     animation: gradient 3s ease-in-out infinite;
     background-size: 300% 300%;
@@ -199,6 +203,7 @@ html:not(.running) .ph-stop-circle {
         padding: 1rem;
     }
 }
+
 
 
 
