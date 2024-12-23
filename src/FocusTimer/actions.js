@@ -19,14 +19,16 @@ function stopAllAudios() {
     state.currentAudio = null;
 }
 
-function toggleAudio(audio) {
+function toggleAudio(audio, button) {
     if (state.currentAudio === audio) {
         audio.pause();
         state.currentAudio = null;
+        updateActiveButton(null);
     } else {
         stopAllAudios();
         audio.play();
         state.currentAudio = audio;
+        updateActiveButton(button);
     }
 }
 
@@ -71,19 +73,30 @@ export function minusTime() {
 }
 
 export function forest() {
-    toggleAudio(sounds.forestAudio);
+    toggleAudio(sounds.forestAudio, document.querySelector('#forest'));
 }
 
 export function rain() {
-    toggleAudio(sounds.rainAudio);
+    toggleAudio(sounds.rainAudio, document.querySelector('#rain'));
 }
 
 export function coffeeShop() {
-    toggleAudio(sounds.coffeeShopAudio);
+    toggleAudio(sounds.coffeeShopAudio, document.querySelector('#coffee-shop'));
 }
 
 export function fireplace() {
-    toggleAudio(sounds.fireplaceAudio);
+    toggleAudio(sounds.fireplaceAudio, document.querySelector('#fireplace'));
 }
+
+
+function updateActiveButton(button) {
+    const buttons = document.querySelectorAll('#songs button');
+    buttons.forEach(btn => btn.classList.remove('active'));
+
+    if (button) {
+        button.classList.add('active');
+    }
+}
+
 
 
